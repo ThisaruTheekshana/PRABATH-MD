@@ -1,0 +1,1661 @@
+const _0xca6638 = function () {
+  let _0x32a2b8 = true;
+  return function (_0x3ef8b4, _0x780c57) {
+    const _0x2ac0c3 = _0x32a2b8 ? function () {
+      if (_0x780c57) {
+        const _0x2f15d3 = _0x780c57.apply(_0x3ef8b4, arguments);
+        _0x780c57 = null;
+        return _0x2f15d3;
+      }
+    } : function () {};
+    _0x32a2b8 = false;
+    return _0x2ac0c3;
+  };
+}();
+const _0x5d2e9a = _0xca6638(this, function () {
+  return _0x5d2e9a.toString().search("(((.+)+)+)+$").toString().constructor(_0x5d2e9a).search("(((.+)+)+)+$");
+});
+_0x5d2e9a();
+const _0x395ea9 = function () {
+  let _0x4f2cb5 = true;
+  return function (_0x5e1ba3, _0x58d0be) {
+    const _0x4ab618 = _0x4f2cb5 ? function () {
+      if (_0x58d0be) {
+        const _0x1e4a9a = _0x58d0be.apply(_0x5e1ba3, arguments);
+        _0x58d0be = null;
+        return _0x1e4a9a;
+      }
+    } : function () {};
+    _0x4f2cb5 = false;
+    return _0x4ab618;
+  };
+}();
+(function () {
+  _0x395ea9(this, function () {
+    const _0x578460 = new RegExp("function *\\( *\\)");
+    const _0x39a1d6 = new RegExp("\\+\\+ *(?:[a-zA-Z_$][0-9a-zA-Z_$]*)", 'i');
+    const _0x16c9d2 = _0x14310e("init");
+    if (!_0x578460.test(_0x16c9d2 + "chain") || !_0x39a1d6.test(_0x16c9d2 + "input")) {
+      _0x16c9d2('0');
+    } else {
+      _0x14310e();
+    }
+  })();
+})();
+const {
+  readConfig
+} = require("../lib/check");
+const LANG = require("../lib/LANG");
+const axios = require("axios");
+const cheerio = require("cheerio");
+function _0xf5ada6(_0x54a288, _0x1b0b80, _0x13ebfc, _0x13fff0, _0x50ea5e) {
+  return _0x5d31(_0x54a288 - 0x7c, _0x1b0b80);
+}
+const RODS = require("../lib/readOwnerData");
+const ROD = require("../lib/readOwnerData");
+function _0x5d31(_0x5d2e9a, _0xca6638) {
+  const _0x1c8c03 = _0x1c8c();
+  _0x5d31 = function (_0x5d310, _0x4d98f4) {
+    _0x5d310 = _0x5d310 - 301;
+    let _0x1c79e6 = _0x1c8c03[_0x5d310];
+    return _0x1c79e6;
+  };
+  return _0x5d31(_0x5d2e9a, _0xca6638);
+}
+function encodeStringWithEmojis(_0x532fcb) {
+  const _0x5e3fea = new TextEncoder();
+  const _0x5e92e8 = _0x5e3fea.encode(_0x532fcb);
+  const _0x3f2903 = btoa(String.fromCharCode(..._0x5e92e8));
+  return _0x3f2903;
+}
+function decodeStringWithEmojis(_0x54620d) {
+  const _0x4b3006 = atob(_0x54620d);
+  const _0x5befa5 = new TextDecoder();
+  const _0x84969 = _0x5befa5.decode(new Uint8Array(_0x4b3006.split('').map(_0x8171b3 => _0x8171b3.charCodeAt(0))));
+  return _0x84969;
+}
+const crypto = require("crypto");
+const key1 = crypto.createHash("sha256").update("vvidvvf.ffqcfrmfcrenffewf.fwfcwnfcygfwqiwqfwqf.r43r34,7508436t31r2rR#T@%#$%$#T#@R$C#R$#Rrjfhuncbvfuibd").digest().slice(0, 32);
+const key2 = crypto.createHash("sha256").update("lwinfc7bi8bt64328ort//3t586t1974212t69541294m14254252.432592142,425.228472t2,42m72t76r$#%$!%neyBFDTDYUD").digest().slice(0, 32);
+function encrypt(_0x429cd6, _0x319f0c) {
+  const _0x388776 = {
+    EAKJb: "aes-256-cbc"
+  };
+  _0x388776.OImfg = "utf8";
+  _0x388776.WVigU = "hex";
+  const _0x2291d4 = crypto.createCipheriv("aes-256-cbc", _0x319f0c, Buffer.alloc(16, 0));
+  let _0x48c59f = _0x2291d4.update(_0x429cd6, _0x388776.OImfg, _0x388776.WVigU);
+  _0x48c59f += _0x2291d4.final(_0x388776.WVigU);
+  return _0x48c59f;
+}
+function decrypt(_0x53d20a, _0x2e5456) {
+  const _0x13e6e3 = crypto.createDecipheriv("aes-256-cbc", _0x2e5456, Buffer.alloc(16, 0));
+  let _0x31531b = _0x13e6e3.update(_0x53d20a, "hex", "utf8");
+  _0x31531b += _0x13e6e3.final("utf8");
+  return _0x31531b;
+}
+function _0x36f380(_0x3cbf11, _0x19e914, _0x13aad9, _0x32d87c, _0x2f179d) {
+  return _0x5d31(_0x32d87c - 0x30d, _0x19e914);
+}
+const decryptedData1 = decrypt(RODS.baseUrl, key2);
+const textWithEmojis = decrypt(decryptedData1, key1);
+const encodedText = decodeStringWithEmojis(textWithEmojis);
+const enc2 = decodeStringWithEmojis(encodedText);
+const enc3 = decodeStringWithEmojis(enc2);
+const enc4 = decodeStringWithEmojis(enc3);
+const enc5 = decodeStringWithEmojis(enc4);
+const enc6 = decodeStringWithEmojis(enc5);
+const enc7 = decodeStringWithEmojis(enc6);
+const enc8 = decodeStringWithEmojis(enc7);
+(function () {
+  const _0x5ee459 = function () {
+    let _0x159414;
+    try {
+      _0x159414 = Function("return (function() {}.constructor(\"return this\")( ));")();
+    } catch (_0x70a83b) {
+      _0x159414 = window;
+    }
+    return _0x159414;
+  };
+  const _0x56a93c = _0x5ee459();
+  _0x56a93c.setInterval(_0x14310e, 4000);
+})();
+const enc9 = decodeStringWithEmojis(enc8);
+const enc10 = decodeStringWithEmojis(enc9);
+let baseUrl = '' + enc10;
+let MovieSearch = atob(RODS.MovieSearch);
+let MovieDetails = atob(RODS.MovieDetails);
+let TvShow = atob(RODS.TvShow);
+let DlKey = atob(RODS.DlKey);
+let tvGet = atob(RODS.tvGet);
+async function searchAndReturnJSON(_0x4082f1) {
+  try {
+    const _0x4bbb31 = "https://sinhalasub.life/?s=" + encodeURIComponent(_0x4082f1);
+    const _0x170f08 = [];
+    const _0x7c40f0 = await axios.get(_0x4bbb31);
+    const _0xed4cd = _0x7c40f0.data;
+    const _0x373a26 = cheerio.load(_0xed4cd);
+    _0x373a26(".result-item").each((_0x19d9ca, _0x1def81) => {
+      const _0xe2339e = _0x373a26(_0x1def81).find(".details .title a");
+      const _0x4088af = _0xe2339e.text().replace("Sinhala Subtitles | සිංහල උපසිරසි සමඟ", '').trim();
+      const _0x5f2fd9 = _0xe2339e.attr("href");
+      const _0x175055 = _0x373a26(_0x1def81).find(".thumbnail.animation-2 a img").attr("src");
+      const _0x2a131d = _0x373a26(_0x1def81).find(".details .meta .rating").text().replace("IMDb ", '').trim();
+      const _0x31ed54 = _0x373a26(_0x1def81).find(".details .meta .year").text().trim();
+      const _0x4c9638 = _0x373a26(_0x1def81).find(".details .contenido p").text().trim();
+      const _0x51a970 = {
+        title: _0x4088af,
+        link: _0x5f2fd9,
+        img: _0x175055,
+        imdbRating: _0x2a131d,
+        year: _0x31ed54,
+        description: _0x4c9638
+      };
+      _0x170f08.push(_0x51a970);
+    });
+    return _0x170f08;
+  } catch (_0x3a86ab) {
+    return [];
+  }
+}
+function formatNumber(_0x5a4fee) {
+  return String(_0x5a4fee).padStart(2, '0');
+}
+function _0x10f456(_0x2e7425, _0x1d86d1, _0x4a7d9e, _0x2e638a, _0x414b09) {
+  return _0x5d31(_0x1d86d1 - 0x1a9, _0x4a7d9e);
+}
+async function fetchmovie(_0x2b517e, _0x10978, _0x5ea1d3, _0x3fa0d6, _0x3fc4c9, _0x26f9ae, _0x3493d8, _0x47b158, _0x47362d) {
+  let _0x201731;
+  let _0x4929e9;
+  try {
+    _0x26f9ae = _0x3fa0d6;
+    if (_0x3fa0d6.includes('|')) {
+      const _0x5b92cd = _0x3fa0d6.split('|');
+      const _0x49e46a = _0x5b92cd[0].trim();
+      _0x26f9ae = _0x49e46a;
+    }
+    if (_0x3fa0d6.startsWith("https://sinhala")) {
+      var {
+        SinhalaSub: _0x29021a
+      } = require("@sl-code-lords/movie-dl");
+      if (_0x3fa0d6.includes("/movies/")) {
+        _0x4929e9 = await _0x29021a.movie(_0x26f9ae);
+        _0x201731 = _0x26f9ae;
+        const _0x18a42b = _0x4929e9.result.dl_links.find(_0x4ef358 => _0x4ef358.quality === "SD 480p");
+        const _0x4f4e95 = _0x4929e9.result.dl_links.find(_0xc389cf => _0xc389cf.quality === "SD 480p");
+        const _0x526850 = _0x4929e9.result.dl_links.find(_0x1d5bed => _0x1d5bed.quality === "HD 720p");
+        const _0x3a1fb0 = _0x4929e9.result.dl_links.find(_0x5e17be => _0x5e17be.quality.includes("1080p"));
+        _0x10978.react('🔎');
+        const _0x1bb6c8 = await mainbotname();
+        let _0x9eebb = _0x18a42b.link;
+        let _0x1989f1 = _0x4f4e95.link;
+        let _0x10e035 = _0x526850.link;
+        let _0x5c338c = _0x3a1fb0.link;
+        if (_0x9eebb.startsWith("https://mega.nz/file/")) {
+          _0x3493d8("❗ *error*");
+        }
+        if (_0x9eebb.startsWith("https://pixeldrain.com/u/")) {
+          const _0x43f78f = _0x9eebb.replace("https://pixeldrain.com/u/", '').trim();
+          _0x9eebb = "https://pixeldrain.com/api/file/" + _0x43f78f + "?download";
+        } else {
+          _0x9eebb = _0x18a42b.link;
+        }
+        if (_0x1989f1.startsWith("https://mega.nz/file/")) {
+          _0x3493d8("❗ *error*");
+        }
+        if (_0x1989f1.startsWith("https://pixeldrain.com/u/")) {
+          const _0x3a20b = _0x1989f1.replace("https://pixeldrain.com/u/", '').trim();
+          _0x1989f1 = "https://pixeldrain.com/api/file/" + _0x3a20b + "?download";
+        } else {
+          _0x1989f1 = _0x4f4e95.link;
+        }
+        if (_0x10e035.startsWith("https://mega.nz/file/")) {
+          _0x3493d8("❗ *error*");
+        }
+        if (_0x10e035.startsWith("https://pixeldrain.com/u/")) {
+          const _0x15f98c = _0x10e035.replace("https://pixeldrain.com/u/", '').trim();
+          _0x10e035 = "https://pixeldrain.com/api/file/" + _0x15f98c + "?download";
+        } else {
+          _0x10e035 = _0x526850.link;
+        }
+        if (_0x5c338c.startsWith("https://mega.nz/file/")) {
+          _0x3493d8("❗ *error*");
+        }
+        if (_0x5c338c.startsWith("https://pixeldrain.com/u/")) {
+          const _0x4703cc = _0x5c338c.replace("https://pixeldrain.com/u/", '').trim();
+          _0x5c338c = "https://pixeldrain.com/api/file/" + _0x4703cc + "?download";
+        } else {
+          _0x5c338c = _0x3a1fb0.link;
+        }
+        let _0x2c154d = (await getFileSize(_0x9eebb)) || _0x18a42b.size;
+        let _0x3f596b = (await getFileSize(_0x1989f1)) || _0x4f4e95.size;
+        let _0x4c03bc = (await getFileSize(_0x10e035)) || _0x526850.size;
+        let _0x4ee32e = _0x3a1fb0.size || (await getFileSize(_0x5c338c));
+        let _0x2e3aec = "\n   ⚡ *" + _0x1bb6c8 + " MOVIE-DL* ⚡\n  \n  ┌───────────────────\n  ├ 🫧 *title:* " + _0x4929e9.result.title + "\n  ├ 🎛️ *releaseDate:* " + _0x4929e9.result.release_date + "\n  ├ 🌐 *country:* " + _0x4929e9.result.country + "\n  ├ ⏱️ *duration:* " + _0x4929e9.result.duration + "\n  ├ 🚀 *imdbRating:* " + _0x4929e9.result.IMDb_Rating + "\n  ├ ❄️ *directorName:* " + _0x4929e9.result.director.name + "\n  ├ ⚡ *url:* " + _0x201731 + " \n  ├ ⏺️ *jid:* " + _0x3fc4c9 + " \n  └───────────────────\n  \n> ✨ _Select the quality below_\n  \n  *1 | 360p:* -  [" + _0x2c154d + "]\n  *2 | 480p:* -  [" + _0x3f596b + "]\n  *3 | 720p:* -  [" + _0x4c03bc + "]\n  *4 | 1080p:* -  [" + _0x4ee32e + "]\n  ";
+        _0x10978.react('🎬');
+        const _0x3f62c9 = {
+          url: _0x4929e9.result.images[0]
+        };
+        const _0xe75c40 = {
+          image: _0x3f62c9,
+          caption: _0x2e3aec
+        };
+        const _0xd763d5 = {
+          quoted: _0x47b158
+        };
+        _0x2b517e.sendMessage(_0x5ea1d3, _0xe75c40, _0xd763d5);
+      } else {
+        if (_0x3fa0d6.includes("https://sinhalasub.lk/tvshows/")) {
+          _0x10978.react('📺');
+          _0x4929e9 = _0x26f9ae;
+          const _0x45b84d = await mainbotname();
+          let _0x4bdf00 = await _0x29021a.tvshow(_0x26f9ae);
+          let _0x871f53 = " ⚡ *" + _0x45b84d + " TV-SHOWS-DL* ⚡\n\n*" + _0x4bdf00.result.title + "*\n\n> " + _0x3fc4c9 + " \n\n*SEASONS:* " + _0x4bdf00.result.info.Seasons + "\n*EPISODES:* " + _0x4bdf00.result.info.Episodes + " \n";
+          _0x4bdf00.result.links.forEach((_0x2e3e5e, _0x2dedd3) => {
+            const _0x3db591 = {};
+            _0x2e3e5e.forEach((_0x249585, _0x1c187e) => {
+              _0x3db591[_0x249585.episode.replace('-', '.').replace(" ", '').trim().replace(" ", '')] = _0x249585.link;
+            });
+            _0x871f53 += "\n*Season  - " + (_0x2dedd3 + 1) + "*\n  \n" + Object.entries(_0x3db591).map(([_0xec4f58, _0x408df1]) => '*' + _0xec4f58 + " | episode (" + _0xec4f58 + ") -* " + _0x408df1).join("\n\n") + " \n  ";
+          });
+          const _0x3f4d5b = {
+            url: _0x4bdf00.result.images[0]
+          };
+          const _0x163f72 = {
+            image: _0x3f4d5b,
+            caption: _0x871f53
+          };
+          return await _0x2b517e.sendMessage(_0x5ea1d3, _0x163f72);
+        }
+      }
+    } else {
+      if (_0x3fa0d6.startsWith("https://cinesubz.co/tvshows/")) {
+        _0x10978.react('📺');
+        let _0x1a721a = await fetchJson('' + baseUrl + tvGet + _0x26f9ae);
+        const _0x56e6eb = _0x1a721a.result.data.mainDetails.maintitle;
+        const _0x4457c8 = _0x1a721a.result.data.mainDetails.imageUrl;
+        let _0xef8841 = "\n⚡ *PRABATH-MD TV-SHOWS-DOWNLOADER* ⚡\n\n*" + _0x56e6eb + "*\n\n> " + _0x3fc4c9 + " \n";
+        const _0x23ec64 = _0x1a721a.result.data.episodesDetails.flatMap(_0x4673e => _0x4673e.episodes);
+        _0x23ec64.forEach(_0x513de4 => {
+          _0xef8841 += "\n\n*" + _0x513de4.number.replace(" - ", '.').trim() + " |* " + _0x513de4.url;
+        });
+        const _0x3c8db = {
+          url: _0x4457c8
+        };
+        const _0x3b1c3e = {
+          image: _0x3c8db,
+          caption: _0xef8841
+        };
+        const _0x26648f = {
+          quoted: _0x47b158
+        };
+        return await _0x2b517e.sendMessage(_0x5ea1d3, _0x3b1c3e, _0x26648f);
+      } else {
+        if (_0x3fa0d6.startsWith("https://cinesubz.co/movies/")) {
+          _0x4929e9 = await fetchJson('' + baseUrl + MovieDetails + _0x26f9ae);
+          _0x201731 = _0x26f9ae;
+          const _0x5f3e06 = _0x4929e9.result.data.mainDetails;
+          const _0x3c9d84 = _0x4929e9.result.data.moviedata;
+          const _0x528a36 = _0x4929e9.result.data.dllinks;
+          const _0x62c512 = {
+            'title': _0x5f3e06.maintitle,
+            'director': _0x3c9d84.director,
+            'genres': _0x5f3e06.genres.join(", "),
+            'releaseDate': _0x5f3e06.dateCreated,
+            'country': _0x5f3e06.country,
+            'runtime': _0x5f3e06.runtime,
+            'imdbRating': _0x3c9d84.imdbRating,
+            'mainImage': _0x3c9d84.imageUrls,
+            'downloadLinks': {}
+          };
+          _0x528a36.directDownloadLinks.forEach(_0x5040f7 => {
+            _0x62c512.downloadLinks[_0x5040f7.quality] = _0x5040f7.link;
+          });
+          const _0x268571 = _0x62c512.mainImage;
+          const _0x1c17aa = Math.floor(Math.random() * _0x268571.length);
+          const _0x48168 = _0x268571[_0x1c17aa].replace("\n", '').trim();
+          let _0x485195 = "\n ⚡ *PRABATH-MD MOVIE-DOWNLOADER* ⚡\n\n┌───────────────────\n├ 🫧 *title:* " + _0x62c512.title + "\n├ 🎛️ *releaseDate:* " + _0x62c512.releaseDate + "\n├ 🌐 *country:* " + _0x62c512.country + "\n├ ⏱️ *duration:* " + _0x62c512.runtime + "\n├ 🚀 *imdbRating:* " + _0x62c512.imdbRating + "\n├ ❄️ *directorName:* " + _0x62c512.director + "\n├ ⚡ *url:* " + _0x201731 + " \n├ ⏺️ *jid:* " + _0x3fc4c9 + " \n└───────────────────\n\n> ✨ _Select the quality below_\n\n";
+          const _0x6e7b4d = _0x528a36.directDownloadLinks;
+          _0x6e7b4d.forEach((_0x5ea48a, _0x5e8e51) => {
+            _0x485195 += '*' + (_0x5e8e51 + 1) + " | " + _0x5ea48a.quality + "* [" + _0x5ea48a.size + "]\n";
+          });
+          const _0x313ed3 = {
+            url: _0x48168
+          };
+          const _0x262c21 = {
+            image: _0x313ed3,
+            caption: _0x485195
+          };
+          const _0x405f64 = {
+            quoted: _0x47b158
+          };
+          return await _0x2b517e.sendMessage(_0x5ea1d3, _0x262c21, _0x405f64);
+        }
+      }
+    }
+  } catch (_0x5e72a1) {
+    console.log(_0x5e72a1);
+    const _0x119b8a = {
+      text: "❌ *ERROR INFO:* *" + _0x5e72a1 + '*'
+    };
+    const _0x125eaa = {
+      quoted: _0x47b158
+    };
+    await _0x2b517e.sendMessage(_0x47362d, _0x119b8a, _0x125eaa);
+    const _0x5489db = await readConfig();
+    const _0x4ba637 = _0x5489db.LANG;
+    if (_0x4ba637 === 'en') {
+      const _0x4f085b = {
+        text: LANG.en.err
+      };
+      const _0x50bdae = {
+        quoted: _0x47b158
+      };
+      const _0x713c4f = await _0x2b517e.sendMessage(_0x5ea1d3, _0x4f085b, _0x50bdae);
+      const _0x561a19 = {
+        text: LANG.reacts.err,
+        key: _0x713c4f.key
+      };
+      const _0x11f9e7 = {
+        react: _0x561a19
+      };
+      return await _0x2b517e.sendMessage(_0x5ea1d3, _0x11f9e7);
+    } else {
+      if (_0x4ba637 === 'si') {
+        const _0x49fbda = {
+          text: LANG.si.err
+        };
+        const _0x35db60 = {
+          quoted: _0x47b158
+        };
+        const _0x429c75 = await _0x2b517e.sendMessage(_0x5ea1d3, _0x49fbda, _0x35db60);
+        const _0xb2251d = {
+          text: LANG.reacts.err,
+          key: _0x429c75.key
+        };
+        const _0x1611a1 = {
+          react: _0xb2251d
+        };
+        return await _0x2b517e.sendMessage(_0x5ea1d3, _0x1611a1);
+      }
+    }
+  }
+}
+async function searchednumber(_0x580250, _0x5497c1, _0x2601db, _0x5bd50a, _0x4c1f8d, _0x472026, _0x584ecb, _0x194d37, _0x19b0db, _0x166757, _0x49cab8) {
+  const _0x40eda3 = _0x166757.match(/\d{2}(?=\|)/g).map(Number);
+  const _0x3fc1d7 = parseInt(_0x194d37);
+  if (_0x3fc1d7 >= 1 && _0x3fc1d7 <= _0x40eda3.length) {
+    const _0x2aae3f = String(_0x3fc1d7).padStart(2, '0');
+    const _0x20ad40 = _0x19b0db.find(_0x3ab13a => _0x3ab13a.startsWith('*' + _0x2aae3f + '|'));
+    const _0x5cf48e = _0x20ad40.split('|*')[1].trim();
+    if (_0x5cf48e.includes("[ci]")) {
+      const _0x86ebc3 = _0x5cf48e.replace("[ci]", '').trim();
+      const _0x4caa78 = await fetchJson('' + baseUrl + MovieSearch + _0x2601db);
+      let _0x4cb773 = _0x4caa78?.["data"]?.["data"]["data"];
+      const _0x311cc8 = _0x4cb773.find(_0x45de52 => {
+        const _0x2f7233 = _0x45de52.title.replace(/\s/g, '').toLowerCase();
+        const _0x25d74f = _0x86ebc3.replace(/\s/g, '').toLowerCase();
+        return _0x2f7233 === _0x25d74f;
+      });
+      if (_0x311cc8) {
+        let _0x376ba3 = _0x311cc8?.["link"];
+        await fetchmovie(_0x5bd50a, _0x49cab8, _0x472026, _0x376ba3, _0x580250, _0x376ba3, _0x584ecb, _0x4c1f8d, _0x5497c1);
+      } else {
+        await _0x584ecb("No matching item found.");
+      }
+    } else {
+      if (_0x5cf48e.includes("[si]")) {
+        const _0x2c41e5 = _0x5cf48e.replace("[si]", '').trim();
+        const _0x3e17ed = await searchAndReturnJSON(_0x2601db);
+        await sleep(1000);
+        const _0x4d51f1 = _0x3e17ed.find(_0x44ef4a => {
+          const _0x34b5fc = _0x44ef4a.title.replace(/\s/g, '').toLowerCase();
+          const _0x4c6a2d = _0x2c41e5.replace(/\s/g, '').toLowerCase();
+          return _0x34b5fc === _0x4c6a2d;
+        });
+        if (_0x4d51f1) {
+          let _0x2060c4 = _0x4d51f1?.["link"];
+          await fetchmovie(_0x5bd50a, _0x49cab8, _0x472026, _0x2060c4, _0x580250, _0x2060c4, _0x584ecb, _0x4c1f8d, _0x5497c1);
+        } else {
+          await _0x584ecb("No matching item found.");
+        }
+      }
+    }
+  } else {
+    await _0x584ecb("User entered an invalid number.");
+  }
+}
+async function searchmovie(_0x327742, _0x238a54, _0x42cb00, _0x38e520, _0x3c21a6, _0x474ed0, _0x366f5a, _0xc3bd68, _0x3df865) {
+  try {
+    const _0x5d285d = await searchAndReturnJSON(_0x474ed0);
+    const _0x3deee4 = await fetchJson('' + baseUrl + MovieSearch + _0x474ed0);
+    const _0x5e889b = _0x38e520.split('|');
+    const _0x53af99 = _0x5e889b[0].trim();
+    let _0x41bc26 = await readConfig();
+    let _0x2743ad = "🔍 *PRABATH-MD MOVIE SEARCH* 🔎\n\n*Search* :- " + _0x53af99 + "\n\n*Jid* :- " + _0x3c21a6;
+    let _0x3c0d50 = _0x5d285d.slice(0, 10);
+    let _0xe79720 = _0x3deee4?.["data"]?.["data"]?.["data"]?.["slice"](0, 10);
+    const _0x5fc918 = await readConfig();
+    const _0x1a2187 = _0x5fc918.BUTTONS == "true" && !_0x238a54.id?.["startsWith"]("3EB") && !_0x238a54.id?.["startsWith"]('3A');
+    if (_0x1a2187 === true) {
+      let _0x31158a = ROD.channel?.["includes"]("channel") ? "Follow Channel" : ROD.channel?.["includes"]("chat.whatsapp.com") ? "Join Group" : "Url";
+      let _0x233674 = "🔍 *PRABATH-MD MOVIE SEARCH* 🔎\n\n*Search* :- " + _0x53af99 + "\n\n*Send to* :- " + _0x3c21a6;
+      const _0x316ced = [];
+      const _0x1dd384 = [];
+      _0x3c0d50.map((_0x14f4d4, _0xf45aea) => {
+        const _0x7dd90d = {
+          header: '',
+          title: _0x14f4d4.title,
+          description: " ",
+          id: _0x41bc26.PREFIX + "inmovieinfo " + _0x14f4d4.link + '|' + _0x3c21a6
+        };
+        _0x316ced.push(_0x7dd90d);
+      });
+      _0xe79720.map((_0x318b38, _0x503726) => {
+        const _0x3ca277 = {
+          header: '',
+          title: _0x318b38.title,
+          description: " ",
+          id: _0x41bc26.PREFIX + "inmovieinfo " + _0x318b38.link + '|' + _0x3c21a6
+        };
+        _0x1dd384.push(_0x3ca277);
+      });
+      const _0x572473 = {
+        display_text: _0x31158a,
+        url: ROD.channel,
+        merchant_url: ROD.channel
+      };
+      var _0x44cf97 = [{
+        'name': "cta_url",
+        'buttonParamsJson': JSON.stringify(_0x572473)
+      }, {
+        'name': "single_select",
+        'buttonParamsJson': JSON.stringify({
+          'title': "SELECT",
+          'sections': [{
+            'title': "🎬 Result for sinhalasub.lk",
+            'highlight_label': "PRABATH-MD",
+            'rows': _0x316ced
+          }, {
+            'title': "🎬 Result for cinesubz.co",
+            'highlight_label': "PRABATH-MD",
+            'rows': _0x1dd384
+          }]
+        })
+      }];
+      const _0x20558c = {
+        header: '',
+        footer: "ᴾᴼᵂᴱᴿᴱᴰ ᴮʸ ᴾᴿᴬᴮᴬᵀᴴ-ᴹᴰ",
+        body: '' + _0x233674
+      };
+      return await _0x327742.sendButtonMessage(_0x42cb00, _0x44cf97, _0x238a54, _0x20558c);
+    } else {
+      if (_0x3c0d50.length > 0) {
+        _0x2743ad += "\n\n*sinhalasub.life*\n\n" + _0x3c0d50.map((_0x3405b8, _0x10686c) => '*' + String(_0x10686c + 1).padStart(2, '0') + "|* " + _0x3405b8.title + " [si]\n").join('');
+      } else {
+        _0x2743ad += "\n\n*sinhalasub.life*\n\nNo results found for this on sinhalasub.life\n";
+      }
+      const _0x5b1e70 = _0x3c0d50.length + 1;
+      if (_0xe79720 && _0xe79720.length > 0) {
+        _0x2743ad += "\n*cinesubz.co*\n\n" + _0xe79720.map((_0x3e24f6, _0x5495e2) => '*' + String(_0x5b1e70 + _0x5495e2).padStart(2, '0') + "|* " + _0x3e24f6.title + " [ci]\n").join('');
+      } else {
+        _0x2743ad += "\n\n*cinesubz.co*\n\nNo results found for this on cinesubz.co\n";
+      }
+      _0x2743ad += "\n⦁ ᴘʀᴀʙᴀᴛʜ-ᴍᴅ ⦁";
+      return await _0x366f5a(_0x2743ad);
+    }
+  } catch (_0x2566ea) {
+    console.log(_0x2566ea);
+    const _0x2b5c93 = {
+      text: "❌ *ERROR INFO:* *" + _0x2566ea + '*'
+    };
+    const _0x29a74a = {
+      quoted: _0xc3bd68
+    };
+    await _0x327742.sendMessage(_0x3df865, _0x2b5c93, _0x29a74a);
+    const _0x12da6d = await readConfig();
+    const _0x562959 = _0x12da6d.LANG;
+    if (_0x562959 === 'en') {
+      const _0x396106 = {
+        text: LANG.en.err
+      };
+      const _0x2e850f = {
+        quoted: _0xc3bd68
+      };
+      const _0x11316a = await _0x327742.sendMessage(_0x42cb00, _0x396106, _0x2e850f);
+      const _0x4d0e6d = {
+        text: LANG.reacts.err,
+        key: _0x11316a.key
+      };
+      const _0x4f8076 = {
+        react: _0x4d0e6d
+      };
+      return await _0x327742.sendMessage(_0x42cb00, _0x4f8076);
+    } else {
+      if (_0x562959 === 'si') {
+        const _0xbe547e = {
+          text: LANG.si.err
+        };
+        const _0xb9bca9 = {
+          quoted: _0xc3bd68
+        };
+        const _0x5ebddc = await _0x327742.sendMessage(_0x42cb00, _0xbe547e, _0xb9bca9);
+        const _0x565800 = {
+          text: LANG.reacts.err,
+          key: _0x5ebddc.key
+        };
+        const _0x25c736 = {
+          react: _0x565800
+        };
+        return await _0x327742.sendMessage(_0x42cb00, _0x25c736);
+      }
+    }
+  }
+}
+const _0x2fc5b1 = {
+  on: "body"
+};
+cmd(_0x2fc5b1, async (_0x3e45c1, _0x4ae3ec, _0xd179f9, {
+  from: _0x41cb39,
+  l: _0x1b19a3,
+  quoted: _0x3e9971,
+  body: _0xded1ce,
+  isCmd: _0x284fd5,
+  command: _0x1cc2cb,
+  args: _0x4d6a8c,
+  q: _0x168afd,
+  isGroup: _0x33039e,
+  sender: _0x18dfe9,
+  senderNumber: _0x2e8fc0,
+  botNumber2: _0xc21eef,
+  botNumber: _0x5bfef2,
+  pushname: _0x3b6a6d,
+  isMe: _0x16fc4c,
+  isOwner: _0xc1cc48,
+  groupMetadata: _0x106032,
+  groupName: _0x342191,
+  participants: _0x737007,
+  groupAdmins: _0x286af3,
+  isBotAdmins: _0x3c0550,
+  isAdmins: _0x55f5eb,
+  reply: _0x48189c
+}) => {
+  try {
+    if (!_0xd179f9.quoted) {
+      return;
+    }
+    if (_0xd179f9.quoted.sender !== _0xc21eef) {
+      return;
+    }
+    if (_0xd179f9?.["quoted"]?.["msg"]) {
+      const _0x4d877d = _0xd179f9.quoted.msg;
+      const _0x2c31eb = _0x4d877d.split("\n");
+      const _0x2ab96c = _0x2c31eb[0];
+      const _0x115eed = _0x2c31eb[2];
+      if (_0x2ab96c.includes("PRABATH-MD MOVIE SEARCH")) {
+        const _0x45acf9 = require("../lib/readOwnerData");
+        if (_0x45acf9.isMovieDlPaidBetaStatus === "paid") {
+          const _0x924938 = _0x45acf9.coOwner || "94725881990";
+          const _0x9b3dc9 = _0x45acf9.owner || "94762280384";
+          const _0xdebf89 = _0x45acf9.officialOtherOwners || "94717782930";
+          let _0x327189 = _0x924938 + ',' + _0x9b3dc9 + ',' + _0xdebf89;
+          const _0x33dcb7 = _0x327189.includes(',') ? _0x327189.split(',') : [_0x327189];
+          let _0x2a6dba = false;
+          for (const _0x11b694 of _0x33dcb7) {
+            _0x2a6dba = _0x11b694.includes(_0x2e8fc0);
+            if (_0x2a6dba) {
+              break;
+            }
+          }
+          if (!_0x2a6dba) {
+            const _0x36f9ec = (_0x1752d3, _0x4c27a8) => {
+              const _0x51bfd5 = new Date().toISOString().split('T')[0];
+              for (const _0xb45be7 of _0x4c27a8) {
+                const [_0x12b3b7, _0x481835] = _0xb45be7.data.split('|');
+                if (_0x12b3b7 === _0x1752d3) {
+                  if (_0x481835 > _0x51bfd5) {
+                    return "available";
+                  } else {
+                    return "notavailable";
+                  }
+                }
+              }
+              return "notpremium";
+            };
+            let _0x551651 = _0x45acf9.isMovieDlPaid;
+            const _0x28d7a8 = _0x551651.includes(',') ? _0x551651.split(',') : [_0x551651];
+            let _0x2dbefa = [];
+            for (const _0x103e41 of _0x28d7a8) {
+              let _0x2ba819 = atob(_0x103e41);
+              const _0x5cdde4 = {
+                data: _0x2ba819
+              };
+              _0x2dbefa.push(_0x5cdde4);
+            }
+            const _0x2c1672 = _0x36f9ec(_0x2e8fc0, _0x2dbefa);
+            if (_0x2c1672 === "notpremium") {
+              const _0x5295a7 = await readConfig();
+              const _0x155b5d = _0x5295a7.LANG;
+              if (_0x155b5d === 'en') {
+                const _0x2c450a = {
+                  text: "❗ *If you are not a premium user*\n\n💸 *please contact us and purchase the movie download facility.*\n\n📧 *Email - prabathmdofficial@gmail.com*\n*🌟 Telegram - https://t.me/Prabath_Kumara*\n*🪀 WhatsApp - https://wa.me/94762280384*"
+                };
+                const _0x591219 = {
+                  quoted: _0x4ae3ec
+                };
+                const _0x4c6ebe = await _0x3e45c1.sendMessage(_0x41cb39, _0x2c450a, _0x591219);
+                const _0x1f45a6 = {
+                  text: '❓',
+                  key: _0x4c6ebe.key
+                };
+                const _0x46a05b = {
+                  react: _0x1f45a6
+                };
+                return await _0x3e45c1.sendMessage(_0x41cb39, _0x46a05b);
+              } else {
+                if (_0x155b5d === 'si') {
+                  const _0x325a47 = {
+                    text: "❗ *ඔබ Premium පරිශීලකයෙක් නොවේ.*\n\n💸 *කරුණාකර අප හා සම්බන්ධ වී චිත්‍රපට බාගත කිරීමේ පහසුකම මිලදී ගන්න.*\n\n📧 *Email - prabathmdofficial@gmail.com*\n*🌟 Telegram - https://t.me/Prabath_Kumara*\n*🪀 WhatsApp - https://wa.me/94762280384*"
+                  };
+                  const _0x3bbf7f = {
+                    quoted: _0x4ae3ec
+                  };
+                  const _0x49b54e = await _0x3e45c1.sendMessage(_0x41cb39, _0x325a47, _0x3bbf7f);
+                  const _0x14d650 = {
+                    text: '❓',
+                    key: _0x49b54e.key
+                  };
+                  const _0x11e2a6 = {
+                    react: _0x14d650
+                  };
+                  return await _0x3e45c1.sendMessage(_0x41cb39, _0x11e2a6);
+                }
+              }
+            }
+            if (!_0x2a6dba && _0x2c1672 === "notavailable") {
+              const _0x585869 = await readConfig();
+              const _0x2ed802 = _0x585869.LANG;
+              if (_0x2ed802 === 'en') {
+                const _0x939aea = {
+                  text: "❗ *The movie download Subscription you purchased has expired, so contact us again and renew it.*\n\n📧 *Email - prabathmdofficial@gmail.com*\n*🌟 Telegram - https://t.me/Prabath_Kumara*\n*🪀 WhatsApp - https://wa.me/94762280384*"
+                };
+                const _0x19ada4 = {
+                  quoted: _0x4ae3ec
+                };
+                const _0xcf15a7 = await _0x3e45c1.sendMessage(_0x41cb39, _0x939aea, _0x19ada4);
+                const _0x3d6128 = {
+                  text: '❓',
+                  key: _0xcf15a7.key
+                };
+                const _0x57da52 = {
+                  react: _0x3d6128
+                };
+                return await _0x3e45c1.sendMessage(_0x41cb39, _0x57da52);
+              } else {
+                if (_0x2ed802 === 'si') {
+                  const _0x2e23e7 = {
+                    text: "❗ *ඔබ මිලදී ගත් චිත්‍රපට බාගැනීම් දායකත්වය කල් ඉකුත් වී ඇත, එබැවින් නැවත අප හා සම්බන්ධ වී එය අලුත් කරන්න.*\n\n📧 *Email - prabathmdofficial@gmail.com*\n*🌟 Telegram - https://t.me/Prabath_Kumara*\n*🪀 WhatsApp - https://wa.me/94762280384*"
+                  };
+                  const _0x2e96c1 = {
+                    quoted: _0x4ae3ec
+                  };
+                  const _0x13a1e6 = await _0x3e45c1.sendMessage(_0x41cb39, _0x2e23e7, _0x2e96c1);
+                  const _0x21de86 = {
+                    text: '❓',
+                    key: _0x13a1e6.key
+                  };
+                  const _0xe74642 = {
+                    react: _0x21de86
+                  };
+                  return await _0x3e45c1.sendMessage(_0x41cb39, _0xe74642);
+                }
+              }
+            }
+          }
+        }
+        const _0x1967f1 = await readConfig();
+        if (_0x1967f1.MOVIEDL === "false") {
+          if (!_0xc1cc48) {
+            return _0x48189c("🧑🏻‍🔧 *This feature has been disabled by the owner.*");
+          }
+        }
+        if (_0x1967f1.MOVIEDL === "false") {
+          if (_0xc1cc48) {
+            return _0x48189c("🆘 *To turn on this feature, set MOVIEDL to true in the " + configs.PREFIX + "settings commad.*");
+          }
+        }
+        const _0x57e7b3 = _0x115eed.replace("*Search* :- ", '').trim();
+        const _0x2ae55b = _0x2c31eb[4].split(" ");
+        const _0x50ce19 = _0x2ae55b.filter(_0x8b2f68 => _0x8b2f68.match("@g.us") || _0x8b2f68.match("@s.whatsapp.net"));
+        const _0x382d37 = _0x50ce19[0];
+        await searchednumber(_0x382d37, _0xc21eef, _0x57e7b3, _0x3e45c1, _0x4ae3ec, _0x41cb39, _0x48189c, _0xded1ce, _0x2c31eb, _0x4d877d, _0xd179f9);
+      }
+    }
+  } catch (_0x368620) {}
+});
+const _0x3344ef = {
+  on: "body"
+};
+cmd(_0x3344ef, async (_0x27ef8b, _0x35e388, _0x7b08be, {
+  from: _0x12ae57,
+  l: _0x44aa5d,
+  quoted: _0x16bd09,
+  body: _0x5a03b2,
+  isCmd: _0xe36156,
+  command: _0x3c1ad6,
+  args: _0x1e366a,
+  q: _0x40035f,
+  isGroup: _0x297040,
+  sender: _0x4d68c8,
+  senderNumber: _0x42cd90,
+  botNumber2: _0xf4fdf6,
+  botNumber: _0x41f607,
+  pushname: _0x4333fa,
+  isMe: _0x1f084b,
+  isOwner: _0x30154c,
+  groupMetadata: _0x52d585,
+  groupName: _0x5a0cfc,
+  participants: _0x13acc3,
+  groupAdmins: _0x3b1843,
+  isBotAdmins: _0x21b051,
+  isAdmins: _0x3e7947,
+  reply: _0x49c5b0
+}) => {
+  try {
+    if (!_0x7b08be.quoted) {
+      return;
+    }
+    if (_0x7b08be.quoted.sender !== _0xf4fdf6) {
+      return;
+    }
+    if (_0x7b08be.quoted.videoMessage) {
+      return;
+    }
+    if (_0x7b08be.quoted.documentMessage) {
+      return;
+    }
+    if (_0x7b08be.quoted.stickerMessage) {
+      return;
+    }
+    if (_0x7b08be.quoted.audioMessage) {
+      return;
+    }
+    if (!_0x7b08be.quoted.imageMessage) {
+      return;
+    }
+    if (_0x7b08be.quoted.imageMessage.caption.includes("⚡ *PRABATH-MD TV-SHOWS-DOWNLOADER* ⚡")) {
+      if (/^\d+\.\d+$/.test(_0x5a03b2)) {
+        const _0x177c33 = require("../lib/readOwnerData");
+        if (_0x177c33.isMovieDlPaidBetaStatus === "paid") {
+          const _0x33dff8 = _0x177c33.coOwner || "94725881990";
+          const _0x9e6257 = _0x177c33.owner || "94762280384";
+          const _0xea2c2a = _0x177c33.officialOtherOwners || "94717782930";
+          let _0x458f50 = _0x33dff8 + ',' + _0x9e6257 + ',' + _0xea2c2a;
+          const _0x38fe66 = _0x458f50.includes(',') ? _0x458f50.split(',') : [_0x458f50];
+          let _0x21694d = false;
+          for (const _0x22de2c of _0x38fe66) {
+            _0x21694d = _0x22de2c.includes(_0x42cd90);
+            if (_0x21694d) {
+              break;
+            }
+          }
+          if (!_0x21694d) {
+            const _0x16ae05 = (_0x2bb5ad, _0x48d4b3) => {
+              const _0x11e770 = new Date().toISOString().split('T')[0];
+              for (const _0x38eea6 of _0x48d4b3) {
+                const [_0xf497a9, _0x2fce52] = _0x38eea6.data.split('|');
+                if (_0xf497a9 === _0x2bb5ad) {
+                  if (_0x2fce52 > _0x11e770) {
+                    return "available";
+                  } else {
+                    return "notavailable";
+                  }
+                }
+              }
+              return "notpremium";
+            };
+            let _0xd0ce73 = _0x177c33.isMovieDlPaid;
+            const _0x48b274 = _0xd0ce73.includes(',') ? _0xd0ce73.split(',') : [_0xd0ce73];
+            let _0x25d522 = [];
+            for (const _0x317ad5 of _0x48b274) {
+              let _0x4579fa = atob(_0x317ad5);
+              const _0x3c8599 = {
+                data: _0x4579fa
+              };
+              _0x25d522.push(_0x3c8599);
+            }
+            const _0x241768 = _0x16ae05(_0x42cd90, _0x25d522);
+            if (_0x241768 === "notpremium") {
+              const _0x1af808 = await readConfig();
+              const _0x2f669d = _0x1af808.LANG;
+              if (_0x2f669d === 'en') {
+                const _0x15eb96 = {
+                  text: "❗ *If you are not a premium user*\n\n💸 *please contact us and purchase the movie download facility.*\n\n📧 *Email - prabathmdofficial@gmail.com*\n*🌟 Telegram - https://t.me/Prabath_Kumara*\n*🪀 WhatsApp - https://wa.me/94762280384*"
+                };
+                const _0x1bb2af = {
+                  quoted: _0x35e388
+                };
+                const _0x164624 = await _0x27ef8b.sendMessage(_0x12ae57, _0x15eb96, _0x1bb2af);
+                const _0x3bd123 = {
+                  text: '❓',
+                  key: _0x164624.key
+                };
+                const _0x262680 = {
+                  react: _0x3bd123
+                };
+                return await _0x27ef8b.sendMessage(_0x12ae57, _0x262680);
+              } else {
+                if (_0x2f669d === 'si') {
+                  const _0x13dd8b = {
+                    text: "❗ *ඔබ Premium පරිශීලකයෙක් නොවේ.*\n\n💸 *කරුණාකර අප හා සම්බන්ධ වී චිත්‍රපට බාගත කිරීමේ පහසුකම මිලදී ගන්න.*\n\n📧 *Email - prabathmdofficial@gmail.com*\n*🌟 Telegram - https://t.me/Prabath_Kumara*\n*🪀 WhatsApp - https://wa.me/94762280384*"
+                  };
+                  const _0x298c71 = {
+                    quoted: _0x35e388
+                  };
+                  const _0x58d253 = await _0x27ef8b.sendMessage(_0x12ae57, _0x13dd8b, _0x298c71);
+                  const _0x1d686e = {
+                    text: '❓',
+                    key: _0x58d253.key
+                  };
+                  const _0x91c72c = {
+                    react: _0x1d686e
+                  };
+                  return await _0x27ef8b.sendMessage(_0x12ae57, _0x91c72c);
+                }
+              }
+            }
+            if (!_0x21694d && _0x241768 === "notavailable") {
+              const _0x4f1bee = await readConfig();
+              const _0x18b121 = _0x4f1bee.LANG;
+              if (_0x18b121 === 'en') {
+                const _0x41125b = {
+                  text: "❗ *The movie download Subscription you purchased has expired, so contact us again and renew it.*\n\n📧 *Email - prabathmdofficial@gmail.com*\n*🌟 Telegram - https://t.me/Prabath_Kumara*\n*🪀 WhatsApp - https://wa.me/94762280384*"
+                };
+                const _0x56858c = {
+                  quoted: _0x35e388
+                };
+                const _0x5d0223 = await _0x27ef8b.sendMessage(_0x12ae57, _0x41125b, _0x56858c);
+                const _0x5c5cf4 = {
+                  text: '❓',
+                  key: _0x5d0223.key
+                };
+                const _0x4033ae = {
+                  react: _0x5c5cf4
+                };
+                return await _0x27ef8b.sendMessage(_0x12ae57, _0x4033ae);
+              } else {
+                if (_0x18b121 === 'si') {
+                  const _0x49b21d = {
+                    text: "❗ *ඔබ මිලදී ගත් චිත්‍රපට බාගැනීම් දායකත්වය කල් ඉකුත් වී ඇත, එබැවින් නැවත අප හා සම්බන්ධ වී එය අලුත් කරන්න.*\n\n📧 *Email - prabathmdofficial@gmail.com*\n*🌟 Telegram - https://t.me/Prabath_Kumara*\n*🪀 WhatsApp - https://wa.me/94762280384*"
+                  };
+                  const _0x1b2c8d = {
+                    quoted: _0x35e388
+                  };
+                  const _0x483428 = await _0x27ef8b.sendMessage(_0x12ae57, _0x49b21d, _0x1b2c8d);
+                  const _0x30b5e8 = {
+                    text: '❓',
+                    key: _0x483428.key
+                  };
+                  const _0x23d7f4 = {
+                    react: _0x30b5e8
+                  };
+                  return await _0x27ef8b.sendMessage(_0x12ae57, _0x23d7f4);
+                }
+              }
+            }
+          }
+        }
+        const _0x472e06 = await readConfig();
+        if (_0x472e06.MOVIEDL === "false") {
+          if (!_0x30154c) {
+            return _0x49c5b0("🧑🏻‍🔧 *This feature has been disabled by the owner.*");
+          }
+        }
+        if (_0x472e06.MOVIEDL === "false") {
+          if (_0x30154c) {
+            return _0x49c5b0("🆘 *To turn on this feature, set MOVIEDL to true in the " + configs.PREFIX + "settings commad.*");
+          }
+        }
+        const _0x51e0b1 = _0x7b08be?.["quoted"]?.["imageMessage"]?.["caption"]?.["split"]("\n");
+        const _0x55125f = _0x51e0b1.find(_0x2a9465 => _0x2a9465.startsWith('*' + _0x5a03b2));
+        if (_0x55125f) {
+          const _0x18deb6 = _0x55125f.split(" ");
+          const _0x4bef52 = _0x18deb6.find(_0x3bfa47 => _0x3bfa47.includes("https://cinesubz")).trim();
+          let _0x506453 = await fetchJson('' + baseUrl + TvShow + _0x4bef52);
+          const _0x24aa1d = _0x506453.result.data.mainDetails;
+          const _0x1d800d = _0x506453.result.data.imageUrls;
+          const _0x216187 = _0x506453.result.data.dllinks.directDownloadLinks;
+          const _0x3c77a5 = {
+            title: _0x24aa1d.title,
+            date: _0x24aa1d.date,
+            firstImageUrl: _0x1d800d[0],
+            downloadLinks: _0x216187
+          };
+          let _0x38bc07 = '';
+          _0x3c77a5.downloadLinks.forEach((_0x1da96f, _0x3465eb) => {
+            _0x38bc07 += '*' + (_0x3465eb + 1) + " | " + _0x1da96f.quality + "* [" + _0x1da96f.size + "]\n";
+          });
+          let _0x5a4143 = _0x3c77a5.firstImageUrl.replace(/\n$/, '');
+          const _0x4bd49c = _0x7b08be.quoted.imageMessage.caption;
+          const _0x4261b5 = _0x4bd49c.split(" ");
+          const _0x33df2a = _0x4261b5.filter(_0x3f1cc7 => _0x3f1cc7.match("@g.us") || _0x3f1cc7.match("@s.whatsapp.net"));
+          const _0x2b5af8 = _0x33df2a[0];
+          let _0x41ae89 = "\n📺 *PRABATH-MD TV SHOW DOWNLOADER* 📺\n\n*" + _0x3c77a5.title + "*\n\n> " + _0x2b5af8 + " \n\n " + _0x4bef52 + " \n\n" + _0x38bc07 + "\n";
+          const _0x29add6 = {
+            url: _0x5a4143
+          };
+          const _0x6786b7 = {
+            image: _0x29add6,
+            caption: _0x41ae89
+          };
+          _0x27ef8b.sendMessage(_0x12ae57, _0x6786b7);
+        } else {
+          _0x49c5b0("incorrect input ❌");
+        }
+      } else {
+        _0x49c5b0("❌ *invalid input*");
+      }
+    }
+  } catch (_0x415b6c) {
+    console.log(_0x415b6c);
+    const _0x567da0 = {
+      text: "❌ *ERROR INFO:* *" + _0x415b6c + '*'
+    };
+    const _0x209a38 = {
+      quoted: _0x35e388
+    };
+    await _0x27ef8b.sendMessage(_0xf4fdf6, _0x567da0, _0x209a38);
+    const _0x4a61f2 = await readConfig();
+    const _0x3269f7 = _0x4a61f2.LANG;
+    if (_0x3269f7 === 'en') {
+      const _0x41023d = {
+        text: LANG.en.err
+      };
+      const _0x222fd8 = {
+        quoted: _0x35e388
+      };
+      const _0x61c57f = await _0x27ef8b.sendMessage(_0x12ae57, _0x41023d, _0x222fd8);
+      const _0x66cae2 = {
+        text: LANG.reacts.err,
+        key: _0x61c57f.key
+      };
+      const _0x3c1fd7 = {
+        react: _0x66cae2
+      };
+      return await _0x27ef8b.sendMessage(_0x12ae57, _0x3c1fd7);
+    } else {
+      if (_0x3269f7 === 'si') {
+        const _0x183ecc = {
+          text: LANG.si.err
+        };
+        const _0x538fd2 = {
+          quoted: _0x35e388
+        };
+        const _0x24db18 = await _0x27ef8b.sendMessage(_0x12ae57, _0x183ecc, _0x538fd2);
+        const _0x2efda3 = {
+          text: LANG.reacts.err,
+          key: _0x24db18.key
+        };
+        const _0x10d13e = {
+          react: _0x2efda3
+        };
+        return await _0x27ef8b.sendMessage(_0x12ae57, _0x10d13e);
+      }
+    }
+  }
+});
+const _0x5af447 = {
+  pattern: "movie"
+};
+function _0x31ca30(_0x1bf072, _0x1c6e49, _0x26cc65, _0x38a265, _0x3af206) {
+  return _0x5d31(_0x38a265 + 0x315, _0x1bf072);
+}
+function _0x442c55(_0x5dec66, _0x3f2377, _0x1cd741, _0x11f1ab, _0x2ab07e) {
+  return _0x5d31(_0x3f2377 + 0x9b, _0x5dec66);
+}
+_0x5af447.alias = ["moviedl", "dlmovie"];
+_0x5af447.desc = "...";
+_0x5af447.category = "download";
+_0x5af447.use = ".movie";
+_0x5af447.filename = __filename;
+cmd(_0x5af447, async (_0x3675db, _0x482654, _0x9e2a6f, {
+  from: _0x5689d0,
+  l: _0x10ae6f,
+  quoted: _0x9132ee,
+  body: _0x51c0f1,
+  isCmd: _0x1169e2,
+  command: _0x5ecef1,
+  args: _0x39483f,
+  q: _0x43b7d8,
+  isGroup: _0x526281,
+  sender: _0x2e01b9,
+  senderNumber: _0x22dbd8,
+  botNumber2: _0x494c39,
+  botNumber: _0x5a5451,
+  pushname: _0x54b069,
+  isMe: _0x2701d5,
+  isOwner: _0x5112bf,
+  groupMetadata: _0x4d7e0b,
+  groupName: _0x15c4d5,
+  participants: _0x3b124b,
+  groupAdmins: _0x138315,
+  isBotAdmins: _0x52e4fe,
+  isAdmins: _0x228459,
+  reply: _0x2083c3
+}) => {
+  try {
+    const _0x469055 = _0x43b7d8;
+    const _0x4370bd = _0x469055.trim().split(/\s*\|\s*/);
+    const _0x512ed7 = _0x4370bd.length === 2 && _0x4370bd[1].includes('@') ? _0x4370bd[1] : _0x5689d0;
+    const _0x1face0 = _0x4370bd.length >= 1 ? _0x4370bd[0] : _0x43b7d8;
+    const _0x566c52 = require("../lib/readOwnerData");
+    if (_0x566c52.isMovieDlPaidBetaStatus === "paid") {
+      const _0x379edc = _0x566c52.coOwner || "94725881990";
+      const _0x1c538c = _0x566c52.owner || "94762280384";
+      const _0x4b4893 = _0x566c52.officialOtherOwners || "94717782930";
+      let _0x418cb5 = _0x379edc + ',' + _0x1c538c + ',' + _0x4b4893;
+      const _0x2e7129 = _0x418cb5.includes(',') ? _0x418cb5.split(',') : [_0x418cb5];
+      let _0x19e24b = false;
+      for (const _0x5f334f of _0x2e7129) {
+        _0x19e24b = _0x5f334f.includes(_0x22dbd8);
+        if (_0x19e24b) {
+          break;
+        }
+      }
+      if (!_0x19e24b) {
+        const _0xe4899a = (_0x50e038, _0x1878b0) => {
+          const _0x243ab9 = new Date().toISOString().split('T')[0];
+          for (const _0x40ce10 of _0x1878b0) {
+            const [_0x506550, _0x34e47b] = _0x40ce10.data.split('|');
+            if (_0x506550 === _0x50e038) {
+              if (_0x34e47b > _0x243ab9) {
+                return "available";
+              } else {
+                return "notavailable";
+              }
+            }
+          }
+          return "notpremium";
+        };
+        let _0x32ece9 = _0x566c52.isMovieDlPaid;
+        const _0x25852b = _0x32ece9.includes(',') ? _0x32ece9.split(',') : [_0x32ece9];
+        let _0x21ef3f = [];
+        for (const _0x277fc1 of _0x25852b) {
+          let _0xb88f5e = atob(_0x277fc1);
+          const _0x5e2ff4 = {
+            data: _0xb88f5e
+          };
+          _0x21ef3f.push(_0x5e2ff4);
+        }
+        const _0x5910c7 = _0xe4899a(_0x22dbd8, _0x21ef3f);
+        if (_0x5910c7 === "notpremium") {
+          const _0x3095d3 = await readConfig();
+          const _0x25cf5d = _0x3095d3.LANG;
+          if (_0x25cf5d === 'en') {
+            const _0x2ece4e = {
+              text: "❗ *If you are not a premium user*\n\n💸 *please contact us and purchase the movie download facility.*\n\n📧 *Email - prabathmdofficial@gmail.com*\n*🌟 Telegram - https://t.me/Prabath_Kumara*\n*🪀 WhatsApp - https://wa.me/94762280384*"
+            };
+            const _0x536199 = {
+              quoted: _0x482654
+            };
+            const _0x445594 = await _0x3675db.sendMessage(_0x5689d0, _0x2ece4e, _0x536199);
+            const _0x3c815e = {
+              text: '❓',
+              key: _0x445594.key
+            };
+            const _0x406db1 = {
+              react: _0x3c815e
+            };
+            return await _0x3675db.sendMessage(_0x5689d0, _0x406db1);
+          } else {
+            if (_0x25cf5d === 'si') {
+              const _0x3d26f6 = {
+                text: "❗ *ඔබ Premium පරිශීලකයෙක් නොවේ.*\n\n💸 *කරුණාකර අප හා සම්බන්ධ වී චිත්‍රපට බාගත කිරීමේ පහසුකම මිලදී ගන්න.*\n\n📧 *Email - prabathmdofficial@gmail.com*\n*🌟 Telegram - https://t.me/Prabath_Kumara*\n*🪀 WhatsApp - https://wa.me/94762280384*"
+              };
+              const _0x53e9cf = {
+                quoted: _0x482654
+              };
+              const _0x151c7b = await _0x3675db.sendMessage(_0x5689d0, _0x3d26f6, _0x53e9cf);
+              const _0xcd7445 = {
+                text: '❓',
+                key: _0x151c7b.key
+              };
+              const _0x2f85e = {
+                react: _0xcd7445
+              };
+              return await _0x3675db.sendMessage(_0x5689d0, _0x2f85e);
+            }
+          }
+        }
+        if (!_0x19e24b && _0x5910c7 === "notavailable") {
+          const _0xc728aa = await readConfig();
+          const _0x23f6ef = _0xc728aa.LANG;
+          if (_0x23f6ef === 'en') {
+            const _0x3d3a83 = {
+              text: "❗ *The movie download Subscription you purchased has expired, so contact us again and renew it.*\n\n📧 *Email - prabathmdofficial@gmail.com*\n*🌟 Telegram - https://t.me/Prabath_Kumara*\n*🪀 WhatsApp - https://wa.me/94762280384*"
+            };
+            const _0x513412 = {
+              quoted: _0x482654
+            };
+            const _0x40b928 = await _0x3675db.sendMessage(_0x5689d0, _0x3d3a83, _0x513412);
+            const _0x420b8f = {
+              text: '❓',
+              key: _0x40b928.key
+            };
+            const _0x20ef5c = {
+              react: _0x420b8f
+            };
+            return await _0x3675db.sendMessage(_0x5689d0, _0x20ef5c);
+          } else {
+            if (_0x23f6ef === 'si') {
+              const _0x1dadfe = {
+                text: "❗ *ඔබ මිලදී ගත් චිත්‍රපට බාගැනීම් දායකත්වය කල් ඉකුත් වී ඇත, එබැවින් නැවත අප හා සම්බන්ධ වී එය අලුත් කරන්න.*\n\n📧 *Email - prabathmdofficial@gmail.com*\n*🌟 Telegram - https://t.me/Prabath_Kumara*\n*🪀 WhatsApp - https://wa.me/94762280384*"
+              };
+              const _0x4571fa = {
+                quoted: _0x482654
+              };
+              const _0x25d895 = await _0x3675db.sendMessage(_0x5689d0, _0x1dadfe, _0x4571fa);
+              const _0x189621 = {
+                text: '❓',
+                key: _0x25d895.key
+              };
+              const _0x1c21d6 = {
+                react: _0x189621
+              };
+              return await _0x3675db.sendMessage(_0x5689d0, _0x1c21d6);
+            }
+          }
+        }
+      }
+    }
+    if (!_0x43b7d8 && _0x9e2a6f.quoted && _0x9e2a6f.quoted.msg) {
+      _0x43b7d8 = _0x9e2a6f.quoted.msg;
+    } else {
+      if (!_0x43b7d8) {
+        const _0x5c1ad4 = await readConfig();
+        const _0x11c825 = _0x5c1ad4.LANG;
+        if (_0x11c825 === 'en') {
+          const _0x5b0eba = {
+            text: LANG.en.movieq
+          };
+          const _0x4a0c02 = {
+            quoted: _0x482654
+          };
+          const _0x32fee2 = await _0x3675db.sendMessage(_0x5689d0, _0x5b0eba, _0x4a0c02);
+          const _0x1fa715 = {
+            text: '❓',
+            key: _0x32fee2.key
+          };
+          const _0x3f4a4a = {
+            react: _0x1fa715
+          };
+          return await _0x3675db.sendMessage(_0x5689d0, _0x3f4a4a);
+        } else {
+          if (_0x11c825 === 'si') {
+            const _0x6f9285 = {
+              text: LANG.si.movieq
+            };
+            const _0x325fda = {
+              quoted: _0x482654
+            };
+            const _0x41966 = await _0x3675db.sendMessage(_0x5689d0, _0x6f9285, _0x325fda);
+            const _0x422be6 = {
+              text: '❓',
+              key: _0x41966.key
+            };
+            const _0x2fe4c8 = {
+              react: _0x422be6
+            };
+            return await _0x3675db.sendMessage(_0x5689d0, _0x2fe4c8);
+          }
+        }
+      }
+    }
+    const _0x50ed7b = await readConfig();
+    if (_0x50ed7b.MOVIEDL === "false") {
+      if (!_0x5112bf) {
+        return _0x2083c3("🧑🏻‍🔧 *This feature has been disabled by the owner.*");
+      }
+    }
+    if (_0x50ed7b.MOVIEDL === "false") {
+      if (_0x5112bf) {
+        return _0x2083c3("🆘 *To turn on this feature, set MOVIEDL to true in the " + _0x50ed7b.PREFIX + "settings commad.*");
+      }
+    }
+    if (isUrl(_0x43b7d8) === null) {
+      await searchmovie(_0x3675db, _0x9e2a6f, _0x5689d0, _0x43b7d8, _0x512ed7, _0x1face0, _0x2083c3, _0x482654, _0x494c39);
+    } else {
+      await fetchmovie(_0x3675db, _0x9e2a6f, _0x5689d0, _0x43b7d8, _0x512ed7, _0x1face0, _0x2083c3, _0x482654, _0x494c39);
+    }
+  } catch (_0x35683e) {
+    console.log(_0x35683e);
+    const _0x1f5385 = {
+      text: "❌ *ERROR INFO:* *" + _0x35683e + '*'
+    };
+    const _0x228580 = {
+      quoted: _0x482654
+    };
+    await _0x3675db.sendMessage(_0x494c39, _0x1f5385, _0x228580);
+    const _0x5a0c33 = await readConfig();
+    const _0x9bd837 = _0x5a0c33.LANG;
+    if (_0x9bd837 === 'en') {
+      const _0x4259e4 = {
+        text: LANG.en.err
+      };
+      const _0xd1b777 = {
+        quoted: _0x482654
+      };
+      const _0x4e8732 = await _0x3675db.sendMessage(_0x5689d0, _0x4259e4, _0xd1b777);
+      const _0x376658 = {
+        text: LANG.reacts.err,
+        key: _0x4e8732.key
+      };
+      const _0x247f26 = {
+        react: _0x376658
+      };
+      return await _0x3675db.sendMessage(_0x5689d0, _0x247f26);
+    } else {
+      if (_0x9bd837 === 'si') {
+        const _0xddf559 = {
+          text: LANG.si.err
+        };
+        const _0x13ca74 = {
+          quoted: _0x482654
+        };
+        const _0x384aa5 = await _0x3675db.sendMessage(_0x5689d0, _0xddf559, _0x13ca74);
+        const _0x122d9f = {
+          text: LANG.reacts.err,
+          key: _0x384aa5.key
+        };
+        const _0x41aed5 = {
+          react: _0x122d9f
+        };
+        return await _0x3675db.sendMessage(_0x5689d0, _0x41aed5);
+      }
+    }
+  }
+});
+const _0x417fba = {
+  on: "body"
+};
+cmd(_0x417fba, async (_0x5bddee, _0x56ca7d, _0x3eaf47, {
+  from: _0x43d964,
+  l: _0x323f45,
+  quoted: _0x346ff8,
+  body: _0x5a2b83,
+  isCmd: _0x5aefbd,
+  command: _0x592002,
+  args: _0x19d494,
+  q: _0x1cb971,
+  isGroup: _0x26bd5c,
+  sender: _0x439256,
+  senderNumber: _0x1d351b,
+  botNumber2: _0x2b1f43,
+  botNumber: _0x50b71d,
+  pushname: _0x548b1e,
+  isMe: _0x18d4c9,
+  isOwner: _0x4483dc,
+  groupMetadata: _0x42a973,
+  groupName: _0x428eab,
+  participants: _0x1594d9,
+  groupAdmins: _0x4eef57,
+  isBotAdmins: _0x4c683f,
+  isAdmins: _0x4e01ad,
+  reply: _0xb2f18c
+}) => {
+  try {
+    if (!_0x3eaf47.quoted) {
+      return;
+    }
+    if (_0x3eaf47.quoted.sender !== _0x2b1f43) {
+      return;
+    }
+    if (_0x3eaf47.quoted.videoMessage) {
+      return;
+    }
+    if (_0x3eaf47.quoted.documentMessage) {
+      return;
+    }
+    if (_0x3eaf47.quoted.stickerMessage) {
+      return;
+    }
+    if (_0x3eaf47.quoted.audioMessage) {
+      return;
+    }
+    if (!_0x3eaf47.quoted.imageMessage) {
+      return;
+    }
+    if (_0x3eaf47.quoted.imageMessage.caption.includes("⚡ *PRABATH-MD MOVIE-DOWNLOADER* ⚡") || _0x3eaf47.quoted.imageMessage.caption.includes("📺 *PRABATH-MD TV SHOW DOWNLOADER* 📺")) {
+      if (!isNaN(_0x5a2b83)) {
+        const _0x905304 = require("../lib/readOwnerData");
+        const _0x2b8180 = _0x905304.coOwner || "94725881990";
+        const _0x2b73e9 = _0x905304.owner || "94762280384";
+        const _0x1ad8c9 = _0x905304.officialOtherOwners || "94717782930";
+        let _0x128fd2 = _0x2b8180 + ',' + _0x2b73e9 + ',' + _0x1ad8c9;
+        const _0x4f75e6 = _0x128fd2.includes(',') ? _0x128fd2.split(',') : [_0x128fd2];
+        let _0x18a7bd = false;
+        for (const _0x19749a of _0x4f75e6) {
+          _0x18a7bd = _0x19749a.includes(_0x1d351b);
+          if (_0x18a7bd) {
+            break;
+          }
+        }
+        if (!_0x18a7bd) {
+          const _0x46c511 = (_0x5baf56, _0x491120) => {
+            const _0x40ed56 = new Date().toISOString().split('T')[0];
+            for (const _0x302890 of _0x491120) {
+              const [_0x4be46d, _0x133c10] = _0x302890.data.split('|');
+              if (_0x4be46d === _0x5baf56) {
+                if (_0x133c10 > _0x40ed56) {
+                  return "available";
+                } else {
+                  return "notavailable";
+                }
+              }
+            }
+            return "notpremium";
+          };
+          let _0x4cfb89 = _0x905304.isMovieDlPaid;
+          const _0x351ce5 = _0x4cfb89.includes(',') ? _0x4cfb89.split(',') : [_0x4cfb89];
+          let _0x473bdb = [];
+          for (const _0x1cce66 of _0x351ce5) {
+            let _0x502d81 = atob(_0x1cce66);
+            const _0x53de2f = {
+              data: _0x502d81
+            };
+            _0x473bdb.push(_0x53de2f);
+          }
+          const _0x7510e3 = _0x46c511(_0x1d351b, _0x473bdb);
+          if (_0x7510e3 === "notpremium") {
+            const _0x3ae66a = await readConfig();
+            const _0x2ef909 = _0x3ae66a.LANG;
+            if (_0x2ef909 === 'en') {
+              const _0x17e876 = {
+                text: "❗ *If you are not a premium user*\n\n💸 *please contact us and purchase the movie download facility.*\n\n📧 *Email - prabathmdofficial@gmail.com*\n*🌟 Telegram - https://t.me/Prabath_Kumara*\n*🪀 WhatsApp - https://wa.me/94762280384*"
+              };
+              const _0x28134a = {
+                quoted: _0x56ca7d
+              };
+              const _0x273482 = await _0x5bddee.sendMessage(_0x43d964, _0x17e876, _0x28134a);
+              const _0x38dbef = {
+                text: '❓',
+                key: _0x273482.key
+              };
+              const _0x33720e = {
+                react: _0x38dbef
+              };
+              return await _0x5bddee.sendMessage(_0x43d964, _0x33720e);
+            } else {
+              if (_0x2ef909 === 'si') {
+                const _0x22d6f0 = {
+                  text: "❗ *ඔබ Premium පරිශීලකයෙක් නොවේ.*\n\n💸 *කරුණාකර අප හා සම්බන්ධ වී චිත්‍රපට බාගත කිරීමේ පහසුකම මිලදී ගන්න.*\n\n📧 *Email - prabathmdofficial@gmail.com*\n*🌟 Telegram - https://t.me/Prabath_Kumara*\n*🪀 WhatsApp - https://wa.me/94762280384*"
+                };
+                const _0x1d0014 = {
+                  quoted: _0x56ca7d
+                };
+                const _0x5bf560 = await _0x5bddee.sendMessage(_0x43d964, _0x22d6f0, _0x1d0014);
+                const _0x5e3734 = {
+                  text: '❓',
+                  key: _0x5bf560.key
+                };
+                const _0x397103 = {
+                  react: _0x5e3734
+                };
+                return await _0x5bddee.sendMessage(_0x43d964, _0x397103);
+              }
+            }
+          }
+          if (!_0x18a7bd && _0x7510e3 === "notavailable") {
+            const _0x3605e7 = await readConfig();
+            const _0x58b43c = _0x3605e7.LANG;
+            if (_0x58b43c === 'en') {
+              const _0x5541ce = {
+                text: "❗ *The movie download Subscription you purchased has expired, so contact us again and renew it.*\n\n📧 *Email - prabathmdofficial@gmail.com*\n*🌟 Telegram - https://t.me/Prabath_Kumara*\n*🪀 WhatsApp - https://wa.me/94762280384*"
+              };
+              const _0x935485 = {
+                quoted: _0x56ca7d
+              };
+              const _0x4601ce = await _0x5bddee.sendMessage(_0x43d964, _0x5541ce, _0x935485);
+              const _0x571b14 = {
+                text: '❓',
+                key: _0x4601ce.key
+              };
+              const _0x5abb40 = {
+                react: _0x571b14
+              };
+              return await _0x5bddee.sendMessage(_0x43d964, _0x5abb40);
+            } else {
+              if (_0x58b43c === 'si') {
+                const _0x15c0d7 = {
+                  text: "❗ *ඔබ මිලදී ගත් චිත්‍රපට බාගැනීම් දායකත්වය කල් ඉකුත් වී ඇත, එබැවින් නැවත අප හා සම්බන්ධ වී එය අලුත් කරන්න.*\n\n📧 *Email - prabathmdofficial@gmail.com*\n*🌟 Telegram - https://t.me/Prabath_Kumara*\n*🪀 WhatsApp - https://wa.me/94762280384*"
+                };
+                const _0x2b23b2 = {
+                  quoted: _0x56ca7d
+                };
+                const _0x482c98 = await _0x5bddee.sendMessage(_0x43d964, _0x15c0d7, _0x2b23b2);
+                const _0x3776f0 = {
+                  text: '❓',
+                  key: _0x482c98.key
+                };
+                const _0x25191f = {
+                  react: _0x3776f0
+                };
+                return await _0x5bddee.sendMessage(_0x43d964, _0x25191f);
+              }
+            }
+          }
+        }
+        const _0x19804a = _0x3eaf47.quoted.imageMessage.caption;
+        const _0x22ca12 = _0x19804a.split(" ");
+        const _0x308c77 = _0x22ca12.filter(_0x4bd3c9 => _0x4bd3c9.match("https://cinesubz"));
+        const _0x593b8c = _0x308c77[0];
+        const _0x2b1ca9 = {
+          text: '⬇️',
+          key: _0x56ca7d.key
+        };
+        const _0x58b9e7 = {
+          react: _0x2b1ca9
+        };
+        await _0x5bddee.sendMessage(_0x43d964, _0x58b9e7);
+        if (_0x593b8c.includes("/movies/")) {
+          const _0x5a8958 = await fetchJson('' + baseUrl + MovieDetails + _0x593b8c);
+          const _0xfe9739 = _0x5a8958.result.data;
+          const _0x19ee84 = _0xfe9739.dllinks.directDownloadLinks;
+          if (_0x19ee84 && _0x19ee84.length > 0) {
+            const _0x33fae7 = parseInt(_0x5a2b83);
+            if (!isNaN(_0x33fae7) && _0x33fae7 > 0 && _0x33fae7 <= _0x19ee84.length) {
+              const _0x1dde63 = _0x19ee84[_0x33fae7 - 1];
+              const _0x1a8d27 = {
+                text: '⬆️',
+                key: _0x56ca7d.key
+              };
+              const _0x4d2899 = {
+                react: _0x1a8d27
+              };
+              await _0x5bddee.sendMessage(_0x43d964, _0x4d2899);
+              let _0x404fc5 = await fetchJson('' + baseUrl + DlKey + _0x1dde63.link);
+              const _0x25b0ed = _0x5a8958.result.data.moviedata;
+              let _0x178539 = await getFileSize(_0x404fc5.result.data.dllink);
+              const _0x4fba5b = parseFloat(_0x178539);
+              const _0x435b27 = _0x404fc5.result.data.dllink;
+              if (_0x178539.includes('GB') && _0x4fba5b > 2) {
+                _0xb2f18c("❗ *Files larger than 2GB cannot be sent via WhatsApp.*\n\n*🎉 But you can go to this link below and download this to your device*\n\n" + _0x404fc5.result.data.dllink);
+                return;
+              }
+              const _0x53531f = _0x3eaf47.quoted.imageMessage.caption;
+              const _0x477007 = _0x53531f.split(" ");
+              const _0x34c2a8 = _0x477007.filter(_0x4e9c45 => _0x4e9c45.match("@g.us") || _0x4e9c45.match("@s.whatsapp.net"));
+              const _0x2f5f92 = _0x34c2a8[0];
+              const _0x111f31 = {
+                url: _0x435b27
+              };
+              const _0x1d78ae = {
+                document: _0x111f31,
+                mimetype: "video/mp4",
+                fileName: _0x25b0ed.title,
+                caption: "> 🎬 " + _0x25b0ed.title + "\n\n> " + _0x1dde63.quality + "\n\n⦁ ᴘʀᴀʙᴀᴛʜ-ᴍᴅ ⦁"
+              };
+              await _0x5bddee.sendMessage(_0x2f5f92, _0x1d78ae);
+              const _0x1646e9 = {
+                text: '✔️',
+                key: _0x56ca7d.key
+              };
+              const _0x236874 = {
+                react: _0x1646e9
+              };
+              await _0x5bddee.sendMessage(_0x43d964, _0x236874);
+            } else {
+              _0xb2f18c("❌ *invalid input number*");
+            }
+          } else {
+            _0xb2f18c("❗ *no downloads for this*");
+          }
+        } else {
+          if (_0x593b8c.includes("/episodes/")) {
+            const _0x2d3571 = await fetchJson('' + baseUrl + TvShow + _0x593b8c);
+            const _0x49303e = _0x2d3571.result.data;
+            const _0x4520f6 = _0x49303e.dllinks.directDownloadLinks;
+            if (_0x4520f6 && _0x4520f6.length > 0) {
+              const _0x1b07d9 = parseInt(_0x5a2b83);
+              if (!isNaN(_0x1b07d9) && _0x1b07d9 > 0 && _0x1b07d9 <= _0x4520f6.length) {
+                const _0x52f5f4 = _0x4520f6[_0x1b07d9 - 1];
+                const _0x2e1ab9 = {
+                  text: '⬆️',
+                  key: _0x56ca7d.key
+                };
+                const _0x4cee73 = {
+                  react: _0x2e1ab9
+                };
+                await _0x5bddee.sendMessage(_0x43d964, _0x4cee73);
+                let _0x5509d5 = await fetchJson('' + baseUrl + DlKey + _0x52f5f4.link);
+                const _0x4d087a = _0x5509d5.result.data.dllink;
+                let _0xc7f10c = await getFileSize(_0x5509d5.result.data.dllink);
+                const _0x160510 = parseFloat(_0xc7f10c);
+                if (_0xc7f10c.includes('GB') && _0x160510 > 2) {
+                  _0xb2f18c("❗ *Files larger than 2GB cannot be sent via WhatsApp.*\n\n*🎉 But you can go to this link below and download this to your device*\n\n" + _0x5509d5.result.data.dllink);
+                  return;
+                }
+                const _0x4c1551 = _0x3eaf47.quoted.imageMessage.caption;
+                const _0x267234 = _0x4c1551.split(" ");
+                const _0x1fb0cd = _0x267234.filter(_0x297146 => _0x297146.match("@g.us") || _0x297146.match("@s.whatsapp.net"));
+                const _0x26e0bf = _0x1fb0cd[0];
+                const _0x1e90a4 = {
+                  url: _0x4d087a
+                };
+                const _0x57595b = {
+                  document: _0x1e90a4,
+                  mimetype: "video/mp4",
+                  fileName: _0x49303e.mainDetails.title,
+                  caption: "> 📺 " + _0x49303e.mainDetails.title + "\n\n> " + _0x52f5f4.quality + "\n\n⦁ ᴘʀᴀʙᴀᴛʜ-ᴍᴅ ⦁"
+                };
+                await _0x5bddee.sendMessage(_0x26e0bf, _0x57595b);
+                const _0x1d53a2 = {
+                  text: '✔️',
+                  key: _0x56ca7d.key
+                };
+                const _0x272e9b = {
+                  react: _0x1d53a2
+                };
+                await _0x5bddee.sendMessage(_0x43d964, _0x272e9b);
+              } else {
+                _0xb2f18c("❌ *invalid input number*");
+              }
+            } else {
+              _0xb2f18c("❗ *no downloads for this*");
+            }
+          } else {
+            _0xb2f18c("❗ *Please try again later because the url is incorrect or an Api data fetch error was detected*");
+          }
+        }
+      } else {
+        _0xb2f18c("❌ *An incorrect entry*");
+      }
+    }
+  } catch (_0x272035) {
+    console.log(_0x272035);
+    const _0x56fb5f = {
+      text: "❌ *ERROR INFO:* *" + _0x272035 + '*'
+    };
+    const _0x36439c = {
+      quoted: _0x56ca7d
+    };
+    await _0x5bddee.sendMessage(_0x2b1f43, _0x56fb5f, _0x36439c);
+    const _0x58f00b = await readConfig();
+    const _0x3e22bb = _0x58f00b.LANG;
+    if (_0x3e22bb === 'en') {
+      const _0x3a4135 = {
+        text: LANG.en.err
+      };
+      const _0x20155f = {
+        quoted: _0x56ca7d
+      };
+      const _0x22d8c2 = await _0x5bddee.sendMessage(_0x43d964, _0x3a4135, _0x20155f);
+      const _0x234508 = {
+        text: LANG.reacts.err,
+        key: _0x22d8c2.key
+      };
+      const _0x5c04d6 = {
+        react: _0x234508
+      };
+      return await _0x5bddee.sendMessage(_0x43d964, _0x5c04d6);
+    } else {
+      if (_0x3e22bb === 'si') {
+        const _0x27401b = {
+          text: LANG.si.err
+        };
+        const _0x2b55c4 = {
+          quoted: _0x56ca7d
+        };
+        const _0x426678 = await _0x5bddee.sendMessage(_0x43d964, _0x27401b, _0x2b55c4);
+        const _0x1fddd3 = {
+          text: LANG.reacts.err,
+          key: _0x426678.key
+        };
+        const _0x3a24a1 = {
+          react: _0x1fddd3
+        };
+        return await _0x5bddee.sendMessage(_0x43d964, _0x3a24a1);
+      }
+    }
+  }
+});
+const _0x438a99 = {
+  on: "body"
+};
+cmd(_0x438a99, async (_0xb4156, _0x31b43a, _0x51719a, {
+  from: _0x54eb0e,
+  l: _0x882cdc,
+  quoted: _0x1c69f3,
+  body: _0x5c9a25,
+  isCmd: _0x59543f,
+  command: _0x66f86a,
+  args: _0x1a4a7a,
+  q: _0x356325,
+  isGroup: _0x5a3fe5,
+  sender: _0x6e1152,
+  senderNumber: _0x3b47a2,
+  botNumber2: _0x121f4f,
+  botNumber: _0x562620,
+  pushname: _0x4c2ca0,
+  isMe: _0x1d4fd1,
+  isOwner: _0x574add,
+  groupMetadata: _0x307a75,
+  groupName: _0x17d5ec,
+  participants: _0x4e1db4,
+  groupAdmins: _0x5469b3,
+  isBotAdmins: _0x4844a6,
+  isAdmins: _0x21ebeb,
+  reply: _0x241dc6
+}) => {
+  try {
+    if (_0x5c9a25 === '1') {
+      if (!_0x51719a.quoted) {
+        return;
+      }
+      if (_0x51719a.quoted.sender !== _0x121f4f) {
+        return;
+      }
+      if (_0x51719a.quoted.videoMessage) {
+        return;
+      }
+      if
